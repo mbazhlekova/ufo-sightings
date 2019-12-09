@@ -1,0 +1,18 @@
+type Query {
+    ufoSightings: [UFOSighting]
+}
+
+type UFOSighting {
+    id: ID!
+    datetime: String
+    city: String
+    state: String
+    country: String
+    shape: String
+    durationSeconds: String
+    durationHoursMin: String
+    comments: String
+    datePosted: String
+    latitude: String
+    longitude: String
+}

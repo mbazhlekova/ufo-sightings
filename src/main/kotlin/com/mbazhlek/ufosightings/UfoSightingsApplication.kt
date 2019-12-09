@@ -11,9 +11,3 @@ class UfoSightingsApplication
 fun main(args: Array<String>) {
     runApplication<UfoSightingsApplication>(*args)
 }
-
-@RestController
-class MainController {
-    @GetMapping
-    fun index() = "Hello, World!"
-}
