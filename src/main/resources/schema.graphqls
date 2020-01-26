@@ -1,5 +1,8 @@
 type Query {
     ufoSightings: [UFOSighting]
+    ufoSightingById(id: ID!): UFOSighting
+    ufoSightingsByCountry(country: String!): [UFOSighting]
+    ufoSightingsByDayOfTheWeek(day: String!): [UFOSighting]
 }
 
 type UFOSighting {
