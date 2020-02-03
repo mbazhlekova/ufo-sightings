@@ -7,8 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Field
 @Document(collection = "ufosightings")
 data class UFOSighting(
         var datetime: String,
-        var city: String,
         var state: String,
+        var city: String,
         var country: String,
         var shape: String,
         @Field("duration (seconds)")
